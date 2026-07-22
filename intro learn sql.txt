@@ -1,0 +1,149 @@
+1.Problem Statement
+
+Display all the records from the employee table.
+
+The table employee is already created with the following data:
+
+Employee_id	Employee_Name	Department
+1	Kayla Thompson	Sales
+2	Ethan Chen	Operations
+3	Julia Lee	HR
+4	Marcus Garcia	Product
+5	Samantha Park	Operations
+Constraint
+The employee table is already created.
+Display all rows and all columns from the table.
+Use the SQL SELECT statement.
+Do not modify the table data.
+
+
+SQL:
+
+SELECT * FROM employee;
+
+Output:
+
+EMPLOYEE_ID  EMPLOYEE_NAME      DEPARTMENT
+-----------  -----------------  ----------
+1            Kayla Thompson     Sales
+2            Ethan Chen         Operations
+3            Julia Lee          HR
+4            Marcus Garcia      Product
+5            Samantha Park      Operations
+
+
+2.Create Table
+
+Problem Statement
+
+Create a new table named employee with the following columns:
+
+Column Name	Data Type
+employee_id	INT
+employee_name	TEXT
+department	TEXT
+Constraints
+Create a table named employee.
+The table should contain 3 columns.
+Use the following data types:
+employee_id → INT
+employee_name → TEXT
+department → TEXT
+Do not insert any data into the table.
+
+SQL :
+
+CREATE TABLE employee (
+    employee_id INT,
+    employee_name TEXT,
+    department TEXT
+);
+
+Output:
+Table EMPLOYEE created.
+
+3.Inserting Data into a Table
+
+Problem Statement
+
+Insert the following employee records into the employee table using a single INSERT INTO statement.
+
+employee_id	employee_name	department
+4	Marcus Garcia	Product
+5	Samantha Park	Hr
+Constraints
+Use the employee table.
+Insert both rows together in one query.
+Separate each set of values using a comma (,).
+Enclose text values in single quotes (').
+
+SQL :
+INSERT INTO employee (employee_id, employee_name, department)
+VALUES
+    (4, 'Marcus Garcia', 'Product'),
+    (5, 'Samantha Park', 'Hr');
+
+Output :
+2 rows inserted.
+Updated employee Table
+employee_id	employee_name	department
+4	Marcus Garcia	Product
+5	Samantha Park	Hr
+
+4.How to insert to a table
+Problem Statement
+
+Insert the following employee record into the employee table.
+
+employee_id	employee_name	department
+6	Brandon Kim	Operations
+Constraints
+Use the existing employee table.
+Insert one row only.
+Use the INSERT INTO statement.
+Enclose text values in single quotes (').
+
+SQL:
+INSERT INTO employee (employee_id, employee_name, department)
+VALUES (6, 'Brandon Kim', 'Operations');
+
+Output :
+1 row inserted.
+Updated employee Table
+employee_id	employee_name	department
+1	Kayla Thompson	Sales
+2	Ethan Chen	Operations
+3	Julia Lee	Hr
+4	Marcus Garcia	Product
+5	Samantha Park	Operations
+6	Brandon Kim	Operations
+
+5.Debug this query
+Problem Statement
+
+The given SQL query is incorrect and attempts to insert data into the employee table.
+
+Debug the query so that it displays all records from the employee table.
+
+The table structure is:
+
+Column	Data Type
+Id	INT
+Name	TEXT
+Age	INT
+Address	TEXT
+Constraints
+Do not insert any new data.
+Display all rows from the employee table.
+Use the SELECT statement with *.
+
+SQL :
+SELECT * FROM employee;
+
+Output :
+┌────┬───────────────┬─────┬──────────────┐
+│ Id │     Name      │ Age │   Address    │
+├────┼───────────────┼─────┼──────────────┤
+│ 1  │ John Smith    │ 25  │ 123 Main St  │
+│ 2  │ Sarah Johnson │ 30  │ 456 Broadway │
+└────┴───────────────┴─────┴──────────────┘
