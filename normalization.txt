@@ -1,0 +1,68 @@
+Question 1
+
+Given Table:
+EMPNO, ENAME, SAL, DEPTNO, DNAME, LOC
+
+This table is in 2NF.
+
+DNAME and LOC depend on DEPTNO, so the table can be divided into two tables.
+
+EMPLOYEE
+EMPNO
+ENAME
+SAL
+DEPTNO
+
+DEPARTMENT
+DEPTNO
+DNAME
+LOC
+
+After splitting, the table becomes 3NF.
+
+
+Question 2
+
+Given Table:
+ROLLNO, NAME, AGE, EXAM, MARKS, GRADE
+
+This table is in 2NF.
+
+GRADE depends on MARKS, so the table can be divided into two tables.
+
+STUDENT
+ROLLNO
+NAME
+AGE
+EXAM
+MARKS
+
+GRADE_DETAILS
+MARKS
+GRADE
+
+After splitting, the table becomes 3NF.
+
+
+Question 3
+
+Given Table:
+EMPNO, PROJECT_NO, NO_OF_DAYS, CUSTOMERNAME
+
+Primary Key:
+EMPNO + PROJECT_NO
+
+CUSTOMERNAME depends only on PROJECT_NO, so this is a partial dependency.
+
+The table can be divided into:
+
+EMPLOYEE_PROJECT
+EMPNO
+PROJECT_NO
+NO_OF_DAYS
+
+PROJECT
+PROJECT_NO
+CUSTOMERNAME
+
+After splitting, the table becomes 2NF.
